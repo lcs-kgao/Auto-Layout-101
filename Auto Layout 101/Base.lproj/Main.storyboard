@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -72,12 +74,26 @@
                     <view key="view" contentMode="scaleToFill" id="Aur-aK-0wt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6I1-1R-rbW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.0" green="0.1219112353385244" blue="0.93505100388601037" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6I1-1R-rbW" firstAttribute="centerY" secondItem="Aur-aK-0wt" secondAttribute="centerYWithinMargins" id="1wN-jZ-4Nb"/>
+                            <constraint firstItem="6I1-1R-rbW" firstAttribute="top" secondItem="Aur-aK-0wt" secondAttribute="top" id="54z-lr-nzv"/>
+                            <constraint firstItem="6I1-1R-rbW" firstAttribute="leading" secondItem="Aur-aK-0wt" secondAttribute="leadingMargin" constant="-16" id="SdM-Cp-RQ8"/>
+                            <constraint firstItem="6I1-1R-rbW" firstAttribute="leading" secondItem="Aur-aK-0wt" secondAttribute="leadingMargin" constant="-16" id="yJD-r1-PDZ"/>
+                            <constraint firstItem="6I1-1R-rbW" firstAttribute="centerX" secondItem="Aur-aK-0wt" secondAttribute="centerXWithinMargins" id="zmT-eX-Alx"/>
+                            <constraint firstItem="6I1-1R-rbW" firstAttribute="leading" secondItem="Aur-aK-0wt" secondAttribute="leading" id="zvR-bn-1Ka"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c4F-Di-stL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-423" y="66"/>
+            <point key="canvasLocation" x="-423.19999999999999" y="65.217391304347828"/>
         </scene>
     </scenes>
     <resources>
